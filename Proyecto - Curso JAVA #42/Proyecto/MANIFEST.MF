@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: Arleth Alejandra Gonzalez Jaime
+
+Main-Class: Bienvenida 
+X-COMMENT: Espacio para los detalles de tu software
+
+

@@ -14,7 +14,8 @@ Como proyecto final del curso se realizo un programa con interfaz gráfica de us
 
 **3. Pantalla principal**
 
-### Empaquetado de aplicaciones en Java
+### Empaquetado de aplicaciones en Java 
 
-El proyecto final además de encontrarlo en su código también se puede encontrar empaquetado, es decir, como una aplicación para que el usuario no tenga que ejecutarlo ni pueda visualizar el código, solo dandole clic en la aplicación tenga acceso de la interfaz. 
+El proyecto final además de encontrarlo en su código también se puede encontrar empaquetado, es decir, en un archivo **.jar**, lo cuál nos permite ejecutar nuestro programa únicamente dando doble clic sobre él, de esta manera el usuario ya no depende del símbolo del sistema y será mucho mas sencillo compartir el programa con cualquier persona si no tiene conocimientos sobre programación, así como poder proteger nuestro código si no queremos que alguien más lo tenga. 
+
 Se agrego los pasos a seguir para empaquetar una aplicación, los pasos los puedes visualizar en el archivo **"empaquetado-app-Java.txt"**. 

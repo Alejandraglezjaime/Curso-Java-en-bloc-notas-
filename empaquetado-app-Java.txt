@@ -1,0 +1,40 @@
+** CREACION DE UN ARCHIVO TIPO .JAR **
+
+Debemos abrir el bloc de notas para crear un archivo de manifiesto, este archivo es el mas importante para poder empaquetar una aplicacón, pues en este archivo se le indica al empaquetado cuales son las imagenes, donde se ubican y sobre todo cual va a a ser la clase que se va a arrancar. 
+
+	Manifest-Version: 1.0  --> índica al programa que es un archivo de manifiesto, y podemos agregarle la versión de nuestro programa. Si no haz 				   echo actualizaciones sería la versión 1.0
+	Created-By: Arleth Alejandra Gonzalez Jaime --> Creador de este empaquetado / software
+
+	Main-Class: Bienvenida --> indicamos con que interfaz o clase se va a ejecutar primero
+	X-COMMENT: Espacio para los detalles de tu software 
+
+Este archivo debe ser guardado dentro de tu carpeta de proyecto, en la opción de tipo seleccionas "todos los archivos" y en la parte de nombre debe de ir: MANIFEST.MF 
+
+Ahora en el símbolo del sistema entras a tu carpeta del proyecto y tienes que verificar que esten todos tus archivos (carpetas .java, .class, imagenes, etc)
+
+Agregas la siguiente línea de código: 
+
+	jar cvfm Sistema.jar manifest.mf //Aquí agregamos las clases que creamos durante el desarrollo del proyecto // Nota: si tienes imagenes debes poner el nombre_de_la_carpeta_donde_tienes_las_imagenes/nombre_de_la_imagen_con_su_extensión y así con cada imagen que tienes dentro de tus carpetas  
+
+Ejemplo, yo tengo dentro de mi carpeta de proyecto lo siguiente: 
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----     02/10/2017  04:51 p. m.                images
+-a----     19/07/2023  08:32 p. m.           3584 Bienvenida.class
+-a----     19/07/2023  08:31 p. m.           2952 Bienvenida.java
+-a----     19/07/2023  08:32 p. m.           4229 Licencia.class
+-a----     19/07/2023  08:31 p. m.           4017 Licencia.java
+-a----     19/07/2023  08:31 p. m.          15136 Principal.java
+-a----     19/07/2023  08:32 p. m.          10067 Principal.class
+-a----     19/07/2023  08:37 p. m.            152 MANIFEST.MF
+
+en la línea de código yo agrego con lo anterior  jar cvfm Sistema.jar manifest.mf Bienvenida.class Licencia.class Principal.class images/coca-cola.png images/icon.png images/logo-coca.png images/coca-cola-blanco.png 
+
+Dandole enter te va a aparecer todo lo que se agrego, finalmente crea el archivo .jar con la siguiente línea de comando: java -jar nombre_que_pusiste_en_el_.jar_de_la_línea_anterior 
+
+	Ejemplo: java -jar Sistema.jar
+
+Ahora puedes visualizar todo tu código en un archivo .jar (como una aplicación) 
+
+¡¡CONSEJO!! Si quieres compartir tu programa solo basta que compartas tu archivo .jar junto con la carpeta que contenga tus imagenes. 

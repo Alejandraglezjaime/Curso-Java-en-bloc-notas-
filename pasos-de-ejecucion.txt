@@ -1,0 +1,26 @@
+Una vez escrito el código en un bloc de notas lo guardamos con la extención .txt (no importa el nombre como lo guardes) y volvemos a guardarlo pero como archivo tipo java.
+¡¡IMPORTANTE!! Cuando vas a crear un archivo de tipo Java tienes que guardarlo con el mismo nombre de tu clase ejemplpo:
+	
+	public class claseJava {
+	  public static void main(String args[]) {
+	    ------
+	    ------	
+	  }
+	}
+	
+	
+	archivo a guardar tipo Java : claseJava.java
+
+¡¡IMPORTANTE!! Con Java no podemos comunicarnos directamente, para eso, Java pone a nuestra dispoción un compilador llamado JavaC, es el encargado de traducir el lenguaje humano (el código) a lenguaje maquina (byteCodes)
+
+En el símbolo del sistema abrimos la carpeta donde estan nuestros archivos guardados y escribimos "javac nombre_del_archivo_java" 
+	
+	Ejemplo: javac claseJava.java
+
+  ** Si no marca error automaticamente te va a crear un tercer archivo (escrito en bytecodes) con extensión .class
+
+Después volvemos a escribir en el símbolo del sistema java nombre_de_la_clase_sin_extensión
+
+	Ejemplo: java claseJava
+
+
